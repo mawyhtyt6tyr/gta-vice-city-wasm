@@ -474,7 +474,9 @@ async function initSetupFlow() {
       console.log("[setup] local dev detected, refreshing SW registration");
       await clearDevelopmentServiceWorkers();
     }
-
+    if (navigator.storage && navigator.storage.persist) {
+      navigator.storage.persist().catch(() => {});
+}
     console.log("[setup] registering SW...");
     await navigator.serviceWorker.register(`${BASE}sw.js`, { updateViaCache: "none" });
     await navigator.serviceWorker.ready;
