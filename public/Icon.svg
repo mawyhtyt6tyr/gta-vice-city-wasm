@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="board-clip">
+      <rect x="57" y="57" width="398" height="398" rx="4" ry="4"/>
+    </clipPath>
+    <clipPath id="outer-clip">
+      <rect x="0" y="0" width="512" height="512"/>
+    </clipPath>
+  </defs>
+
+  <!-- Yellow Outer Background -->
+  <rect x="0" y="0" width="512" height="512" fill="#F4B400"/>
+
+  <!-- Chalk Long Shadow on Yellow Frame -->
+  <g clip-path="url(#outer-clip)">
+    <polygon points="302,455 404,455 461,512 359,512" fill="#E0A100"/>
+  </g>
+
+  <!-- Green Chalkboard -->
+  <rect x="57" y="57" width="398" height="398" fill="#0F9D58"/>
+
+  <!-- Top Inner Shadow on Chalkboard -->
+  <rect x="57" y="57" width="398" height="6" fill="#0B8043"/>
+
+  <!-- Side Silhouettes (Left & Right Students) -->
+  <g fill="#57BB8A">
+    <!-- Left Student -->
+    <circle cx="158" cy="242" r="24"/>
+    <path d="M 103 337 L 103 314 C 103 292 128 280 158 280 C 188 280 213 292 213 314 L 213 337 Z"/>
+
+    <!-- Right Student -->
+    <circle cx="354" cy="242" r="24"/>
+    <path d="M 299 337 L 299 314 C 299 292 324 280 354 280 C 384 280 409 292 409 314 L 409 337 Z"/>
+  </g>
+
+  <!-- Center Silhouette (Teacher) -->
+  <g fill="#F1F3F4">
+    <circle cx="256" cy="216" r="32"/>
+    <path d="M 174 337 L 174 307 C 174 278 210 264 256 264 C 302 264 338 278 338 307 L 338 337 Z"/>
+  </g>
+
+  <!-- White Chalk Piece -->
+  <rect x="302" y="432" width="102" height="23" fill="#F1F3F4"/>
+</svg>
