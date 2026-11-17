@@ -1,6 +1,6 @@
 export default {
   meta: {
-    title: "GTA: Vice City — Port WASM",
+    title: "Classroom",
   },
   language: {
     label: "Idioma",
