@@ -3,7 +3,7 @@
 // in all locales: the game data is English-only.
 export default {
   meta: {
-    title: "GTA: Vice City — WASM Port",
+    title: "Classroom",
   },
   language: {
     label: "Language",
